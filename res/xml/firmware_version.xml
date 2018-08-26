@@ -30,12 +30,28 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- Eunoia version -->
+    <Preference
+        android:key="eunoia_version"
+        android:title="@*eunoiaos.platform:string/eunoia_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EunoiaVersionPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+
+    <!-- Vendor security patch -->
+    <Preference
+        android:key="vendor_security_key"
+        android:title="@*eunoiaos.platform:string/eunoia_vendor_security_patch"
+        android:selectable="false"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EunoiaVendorSecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
     <Preference
@@ -62,6 +78,15 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+
+    <!-- Build date -->
+    <Preference
+        android:key="os_build_date"
+        android:title="@*eunoiaos.platform:string/build_date"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EunoiaBuildDatePreferenceController"/>
 
     <!-- Build -->
     <Preference
