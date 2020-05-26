@@ -62,4 +62,11 @@
         settings:searchable="false"
         settings:controller="com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController" />
 
+    <eunoiaos.preference.EunoiaSecureSettingSwitchPreference
+        android:key="berry_black_theme"
+        android:dependency="dark_ui_activated"
+        android:title="@string/berry_black_theme_title"
+        android:summary="@string/berry_black_theme_summary"
+        android:defaultValue="false"
+        settings:requiresPackage="com.eunoiaos.overlay.customization.blacktheme" />
 </PreferenceScreen>
