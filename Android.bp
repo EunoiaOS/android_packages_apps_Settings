@@ -107,6 +107,7 @@ android_library {
         "com.eunoiaos.platform.internal",
         "EunoiaPreferenceLib",
         "vendor.lineage.fastcharge-V1.0-java",
+        "SystemUISharedLib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
