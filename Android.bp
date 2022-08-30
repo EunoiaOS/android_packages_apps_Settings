@@ -105,6 +105,7 @@ android_library {
         "androidx.room_room-runtime",
         "SystemUIUnfoldLib",
         "com.eunoiaos.platform.internal",
+        "EunoiaPreferenceLib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
